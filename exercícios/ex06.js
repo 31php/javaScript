@@ -1,3 +1,7 @@
-/*let nome = window.prompt('seu nome é?');
-let sobreNome = window.prompt('agora seu sobrenome');
-window.alert(`olá ${nome} ${sobreNome}`);*/
+let nome = 'bartolomeu';
+let num = 7;
+console.log(typeof nome, typeof num);
+
+
+
+
