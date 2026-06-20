@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+     <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Usando seletores em javaScript</h1>
+
+            <h2>Seu nome é: <span id="nome-titulo"></span></h2>
+
+            <div id="texto"></div>
+        </section>
+    </main>
+
+    <script>
+        const nome = window.prompt('Digite seu nome');
+        const nomeTitulo = window.document.getElementById('nome-titulo');
+        const texto = window.document.getElementById('texto');
+
+        nomeTitulo.innerHTML += nome;
+        texto.innerHTML += `<p>Seu nome em maiúsculo é: ${nome.toUpperCase()}</P>`;
+        texto.innerHTML += `<p>Seu nome em minúsculo é: ${nome.toLowerCase()}</p>`;
+        
+    </script>
+</body>
+</html>
