@@ -1,11 +1,9 @@
 // funções
 
-function dobro(numero){
-    const resultado = numero * 2;
-    return resultado; 
+function saudacao(nome){
+    //console.log(`Bom dia, ${nome}!`);
+    return 'nome';
 }
-dobro()
-console.log(dobro(5));
-console.log(dobro(10))
-console.log(dobro(15))
-console.log(dobro(20))
+saudacao('Phillip');
+saudacao('Maria');
+saudacao('Marta');
