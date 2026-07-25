@@ -35,6 +35,6 @@
 // const freteGratis = carrinhoDeCompras >= 150 && menbroPrime === true ? 'frete gratis' : 'Frete padrão';
 // console.log(freteGratis);
 
-const obterSaudacao = (nome) => nome !== '' ? `olá ${nome}`: 'olá vistante';
-console.log(obterSaudacao('phillip'));
-console.log(obterSaudacao(''));
+// const obterSaudacao = (nome) => nome !== '' ? `olá ${nome}`: 'olá vistante';
+// console.log(obterSaudacao('phillip'));
+// console.log(obterSaudacao(''));
