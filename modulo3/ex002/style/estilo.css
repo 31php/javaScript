@@ -60,3 +60,10 @@ button:hover{
     background-color: var(--cor02);
     border-radius: 5px;
 }
+.paragrafo-resultado, .bad{
+    background-color: var(--cor02);
+    padding: 10px 20px;
+}
+.bad{
+    background-color: rgba(247, 117, 117, 0.938);
+}
