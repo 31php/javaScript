@@ -3,41 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
     <title>inputs</title>
 </head>
 <body>
-    <form action="#" method="post" autocomplete="on" id="meuFormulario">
+    <form action="" method="get" autocomplete="on" id="meuFormulario">
         <fieldset>
+            <legend>Login</legend>
             <p>
-                <label for="meuEmail"><span class="material-symbols-outlined">person</span></label>
-                <input type="email" name="" id="meuEmail" required>
+                <label for="meuLogin">Login</label>
+                <input type="email" name="" id="meuLogin" placeholder="seu email" required>
             </p>
             <p>
-                <label for="minhaSenha"><span class="material-symbols-outlined">key</span></label>
-                <input type="password" name="" id="minhaSenha" maxlength="6" required>
+                <label for="minhaSenha">Senha</label>
+                <input type="password" name="" id="minhaSenha" maxlength="4" placeholder="senha de 4 dígitos">
             </p>
         </fieldset>
-        <button>enviar</button>       
-        
-    </form>    
 
-    <div id="resultado"></div>
+        <button>Enviar</button>
+
+        <div id="resposta"></div>
+    </form>
 
     <script>
         const form = window.document.querySelector('#meuFormulario');
 
-        form.addEventListener('submit' , function(e){
-            e.preventDefault();
+        form.addEventListener('submit', function(evento){
+            evento.preventDefault();
 
-            const email = window.document.querySelector('#meuEmail');
-            const senha = window.document.querySelector('#minhaSenha');
+            const email = window.document.querySelector('#meuLogin').value;
+            const senha = window.document.querySelector('#minhaSenha').value;
 
-            const txt = window.document.querySelector('#resultado');           
-
-            txt.innerHTML = `Seu email é: ${email.value} e sua senha é: ${senha.value}`;
-        });
+            const txt = window.document.querySelector('#resposta');
              
+            const acesso = (email === 'phillip.php31@gmail.com' && senha === '1234') ? 'acesso liberado' : 'acesso negado';   
+
+            txt.innerHTML = acesso;
+        })
     </script>
 </body>
 </html>
