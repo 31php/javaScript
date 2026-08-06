@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <title>inputs</title>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="on" id="meuFormulario">
+        <fieldset>
+            <p>
+                <label for="meuEmail"><span class="material-symbols-outlined">person</span></label>
+                <input type="email" name="" id="meuEmail" required>
+            </p>
+            <p>
+                <label for="minhaSenha"><span class="material-symbols-outlined">key</span></label>
+                <input type="password" name="" id="minhaSenha" maxlength="6" required>
+            </p>
+        </fieldset>
+        <button>enviar</button>       
+        
+    </form>    
+
+    <div id="resultado"></div>
+
+    <script>
+        const form = window.document.querySelector('#meuFormulario');
+
+        form.addEventListener('submit' , function(e){
+            e.preventDefault();
+
+            const email = window.document.querySelector('#meuEmail');
+            const senha = window.document.querySelector('#minhaSenha');
+
+            const txt = window.document.querySelector('#resultado');           
+
+            txt.innerHTML = `Seu email é: ${email.value} e sua senha é: ${senha.value}`;
+        });
+             
+    </script>
+</body>
+</html>
