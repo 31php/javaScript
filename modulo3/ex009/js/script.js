@@ -14,6 +14,5 @@ for(let i = 0; i < elementos.length; i = i + 1){
     tagCriada.innerText = texto;
     novaDiv.appendChild(tagCriada);
 }
-
 caixa.appendChild(novaDiv);
 
