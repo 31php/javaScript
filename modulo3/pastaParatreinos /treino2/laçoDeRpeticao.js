@@ -14,9 +14,9 @@ ex:. for(let i = 0;i <= 5;i++ ou i = i + 1){
 }
 */
 
-// for(let i = 0; i <= 5;i = i + 1){
-//     console.log(i);
-// }
+for(let i = 0; i <= 5;i = i + 1){
+    console.log(i);
+}
 //  const nomes = ['phillip', 'thaiane', 'manuela', 'arthur'];
 //  for(let i = 0; i < nomes.length;i = i + 1){
 //     console.log(nomes[i]);
