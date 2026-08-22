@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    margin: 10px;
+    text-align: center;
+    color: white;   
+}
+header h1{
+    text-decoration: underline;
+}
+body{
+    background-color: rgba(38, 71, 109, 0.849);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+main{
+    width: 40vw;
+    height: 270px;
+    background-color: white;
+
+    border-radius: 6px;
+
+    margin: 10px;
+    position: absolute;
+    left: 29%;
+}
+main p{
+    padding: 10px;
+    text-align: center;
+}
+
