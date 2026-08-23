@@ -11,26 +11,32 @@
         <h1>Notas</h1>
     </header>
   <main>
-      <form action="" method="get" autocomplete="on" id="meuFormulario">
-        <p>
-            <label for="n1">Português</label>
-            <input type="number" class="n1">
-        </p>
-        <p>
-            <label for="n2">Matemática</label>
-            <input type="number" class="n2">
-        </p>
-        <p>
-            <label for="n3">História</label>
-            <input type="number" class="n3">
-        </p>
-        <p>
-            <label for="n4">Geografia</label>
-            <input type="number" class="n4">
-        </p>
-        <button>Enviar</button>
-        <button>Limpar</button>
-      </form>
+      <section>
+          <form action="" method="get" autocomplete="on" id="meuFormulario">
+            <p>
+                <label for="n1">Português</label>
+                <input type="number" id="n1" required>
+            </p>
+            <p>
+                <label for="n2">Matemática</label>
+                <input type="number" id="n2" required>
+            </p>
+            <p>
+                <label for="n3">História</label>
+                <input type="number" id="n3" required>
+            </p>
+            <p>
+                <label for="n4">Geografia</label>
+                <input type="number" id="n4" required>
+            </p>
+            <div>Média: <span id="resultado">0</span></div>
+
+            <div>Status: <span id="resposta"></span></div>
+
+            <button id="botao1">Enviar</button>
+            <button id="botao2">Limpar</button>
+          </form>
+      </section>
   </main>
 </body>
 </html>
