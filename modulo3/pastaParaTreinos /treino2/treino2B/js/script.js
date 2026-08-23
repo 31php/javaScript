@@ -13,11 +13,13 @@ form.addEventListener('submit', function(event){
     const notas = pt + mt + ht + go;
     const media = notas / 4;
      
-    if(media < 7){
+    if(media >= 7){
         res.innerHTML = media;
         situacao.innerHTML = 'Aprovado';
+        situacao.style.color = 'green'
     }else{
         res.innerHTML = media;
         situacao.innerHTML = 'Reprovado';
+        situacao.style.color = 'red';
     }
 })
