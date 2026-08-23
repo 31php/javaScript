@@ -19,14 +19,16 @@ header h1{
 }
 main{
     width: 50vw;
-    height: 80vh;
+    min-height: 70vh;
     background-color: white;
     border-radius: 7px;  
 
-    padding:10px;
+    padding:20px;
 
     position: absolute;
     left: 25%;
+
+    margin-bottom: 40px;
 }
 main p{
     text-align: center;
@@ -34,7 +36,7 @@ main p{
 main input{
     width: 100%;
     height: 40px;
-    padding: 20px;
+    padding: 10px;
     margin: 5px;
 }
 main div{
@@ -49,6 +51,7 @@ main button{
     margin: 5px 0 5px 0px;
     background-color: rgb(8, 27, 126) ;
     color: white;
+    cursor: pointer;
 }
 #botao2{
     margin: 5px 0px 5px 0px ;
