@@ -1,4 +1,6 @@
+const form = window.document.querySelector('#meuFormulario');
 
-function evento(){
+form.addEventListener('submit', function(event){
+    event.preventDefault();
     
-}
+})
