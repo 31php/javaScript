@@ -8,7 +8,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    background-color: rgba(8, 27, 4, 0.925);    
+    background-color: rgb(8, 27, 126);    
 }
 header h1{
     text-align: center;
@@ -19,7 +19,7 @@ header h1{
 }
 main{
     width: 50vw;
-    height: 80vh;
+    height: 100vh;
     background-color: white;
     border-radius: 7px;  
 
@@ -46,17 +46,17 @@ main button{
     margin:5px;
 }
 #botao1{
-    margin: 10px 0 10px 0px;
-    background-color: green;
+    margin: 5px 0 5px 0px;
+    background-color: rgb(8, 27, 126) ;
     color: white;
 }
 #botao2{
-    margin: 10px 0px 10px 0px ;
+    margin: 5px 0px 5px 0px ;
     background-color: rgb(168, 28, 28);
     color: white;
 }
 #botao1:hover{
-    background-color: rgba(13, 243, 13, 0.712);
+    background-color: rgba(5, 141, 175, 0.712);
     color: white;
 }
 #botao2:hover{
